@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center all text on the page */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px; /* Reduced padding to make the header thinner */
+  background-color: #6a0dad; /* Purple background */
+  color: #fff;
+  position: fixed; /* Make the header fixed to the top */
+  width: 100%; /* Ensure the header stretches across the screen */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Keep it above other content */
+  height: 50px; /* Set a fixed height to control size */
+}
+
+.logo img {
+  max-width: 150px; /* Logo size */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align navigation to the right */
+}
+
+nav ul li {
+  margin: 0 20px; /* Uniform margin for list items */
+}
+
+nav ul li a {
+  color: white; /* Set text color to white for better contrast */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+main {
+  flex: 1; /* Allows the main content to grow and shrink as needed */
+  padding-top: 60px; /* Increased padding to ensure content doesn't overlap header */
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #6a0dad; /* Match header background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
